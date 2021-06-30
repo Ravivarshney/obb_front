@@ -1,0 +1,53 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+  
+      <!-- Icon -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Customer Login</a><br>
+      </div>
+  
+      <!-- Login Form -->
+  
+      <div id=form-login >
+      <form >
+        <input type="text" id="username" [(ngModel)]="obb.username" class="fadeIn second" name="username" placeholder="username">
+        <input type="text" id="password" [(ngModel)]="obb.userpassword" class="fadeIn third" name="password" placeholder="password">
+        <input type="submit" (click)="loginCustomer()" class="fadeIn fourth" value="Log In">
+        
+      </form>
+      <div id="formFooter">
+        <a class="underlineHover" id="hide">Sign up</a>
+     </div>
+    </div>
+  
+       <!-- Sign-Up Form -->
+       <div id=form-signup style="display:none"> 
+      <form>
+        <input type="text" id="username" [(ngModel)]="obb.username"class="fadeIn second" name="username" placeholder="Username">
+        <input type="text" id="userid" [(ngModel)]="obb.userid" class="fadeIn third" name="userid" placeholder="Userid">
+        
+        <input type="text" id="userpassword" [(ngModel)]="obb.userpassword" class="fadeIn second" name="userpassword" placeholder="Userpassword">
+        <input type="text" id="donor" [(ngModel)]="obb.b_donor" class="fadeIn third" name="donor" placeholder="donor Name">
+        
+        <input type="text" id="group" [(ngModel)]="obb.b_group" class="fadeIn second" name="group" placeholder="Blood Group">
+        <input type="text" id="date" [(ngModel)]="obb.date" class="fadeIn second" name="date" placeholder="Date of Avaliablity (format: YYYY-MM-DD)">
+
+        <input type="text" id="canDonate" [(ngModel)]="obb.canDonate" class="fadeIn third" name="canDonate" placeholder="Can Donate- Yes/No">
+  
+        <input type="submit"(click)="signUp()" class="fadeIn fourth" value="Sign-Up ">
+     
+      </form>
+      <div id="formFooter">
+        <a class="underlineHover" id="show">Login</a>
+  
+      </div>
+  
+    </div>
+      <!-- Remind Passowrd -->
+     
+    </div>
+  </div>
